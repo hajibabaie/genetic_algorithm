@@ -139,6 +139,8 @@ class GA:
 
         offspring[:, selected_index] = offspring[:, selected_index] + sigma * np.random.randn(number_mutation)
 
+        offspring = np.clip(offspring, self._min_variables, self._max_variables)
+
         return offspring
 
     def run(self):
