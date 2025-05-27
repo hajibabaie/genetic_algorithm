@@ -1,5 +1,5 @@
-from genetic_algorithm.min_one_problem.cost_function import min_one
-from genetic_algorithm.min_one_problem.solution_method import GA
+from cost_function import min_one
+from solution_method import GA
 
 
 def main():
